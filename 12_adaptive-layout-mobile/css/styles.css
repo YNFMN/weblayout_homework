@@ -866,7 +866,14 @@ button:hover {
 /* MEDIA */
 
 @media (max-width: 1024px) {
-	.nav__list {
+
+  /* NAV 1024px */
+
+	.nav {
+    padding: 26px 50px;
+  }
+
+  .nav__list {
 		display: none;
 	}
 
@@ -877,7 +884,26 @@ button:hover {
 		background-color: black;
 	}
 
-	.footer__text {
-		display: none;
-	}
+  .logo-link {
+    width: 150px;
+    height: 48px;
+  }
+
+  .nav__search {
+    margin-left: 0;
+  }
+
+  /* MAIN 1024px */
+
+  .main__container {
+    max-width: 924px;
+  }
+
+  /* HERO */
+
+  .hero__image {
+    height: 668px;
+  }
+
+
 }
