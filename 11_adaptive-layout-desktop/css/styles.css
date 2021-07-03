@@ -128,16 +128,16 @@ button {
 
 :hover {
 	outline: none;
-	transition: all 0.15s ease-in-out;
+	transition: all 0.05s ease;
 }
 
 button:hover {
-	transition: all 0.3s ease-in;
+	transition: all 0.1s ease-in;
 }
 
 :active {
 	outline: none;
-	transition: all 0.2s ease-in;
+	transition: all 0.1s ease-in;
 }
 
 /* COMMON STYLES */
@@ -569,50 +569,45 @@ button:hover {
 }
 
 .faq__list {
-	display: block;
+  width: 100%;
 }
 
 .faq__item {
-  display: block;
-}
-
-.faq__article {
+  position: relative;
   display: flex;
 	justify-content: space-between;
-	align-items: center;
-	padding: 31px 0 30px;
-	/* border-top: 1px solid transparent;
+	border-top: 1px solid transparent;
 	border-bottom: 1px solid var(--color-grey-light);
-	cursor: pointer; */
+	cursor: pointer;
 }
 
-.faq__article {
+.faq__item {
 	margin-top: -1px;
 }
 
 .faq__item:first-child {
-	border-top: 1px solid var(--color-grey-light);
-}
-
-.faq__item {
-  border-top: 1px solid transparent;
-	border-bottom: 1px solid var(--color-grey-light);
-	cursor: pointer;
+  border-top: 1px solid var(--color-grey-light);
 }
 
 .faq__item:focus {
 	outline: none;
 }
 
-.faq__item:hover > .faq__article,
-.faq__item:focus > .faq__article {
+.faq__item:hover {
+  border-top: 1px solid var(--color-orange-light);
+	border-bottom: 1px solid var(--color-orange-light);
+}
+
+.faq__item:hover,
+.faq__item:focus {
 	color: var(--color-orange-light);
 	border-top: 1px solid var(--color-orange-light);
 	border-bottom: 1px solid var(--color-orange-light);
 }
 
-.faq__item:hover  > .faq__article > .faq__button,
-.faq__item:focus > .faq__article > .faq__button {
+.faq__item:hover .faq__button,
+.faq__item:focus .faq__button,
+.faq__button:focus {
 	background-image: url('../img/icon/plus-orange.svg');
 }
 
@@ -622,8 +617,16 @@ button:hover {
 	border-bottom: 1px solid var(--color-grey-light);
 }
 
-.faq__item:active > .faq__article > .faq__button {
+.faq__item:active .faq__button {
 	background-image: url('../img/icon/plus-active.svg');
+}
+
+.faq__article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 31px 0 30px;
+  width: 100%;
 }
 
 .faq__subtitle {
