@@ -10,6 +10,17 @@
 }
 
 @font-face {
+  font-family: 'MontserratMedium';
+  src: url('fonts/MontserratMedium.eot');
+	src: local('Montserrat Medium'), local('Montserrat-Medium'),
+    url('fonts/montserrat-medium.woff2') format('woff2'),
+    url('fonts/montserrat-medium.woff') format('woff');
+  font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
 	font-family: 'Montserrat';
 	src: url('../fonts/montserrat-semibold.eot');
 	src: local('Montserrat SemiBold'), local('Montserrat-SemiBold'),
@@ -137,7 +148,7 @@ button:hover {
 
 :active {
 	outline: none;
-	transition: all 0.1s ease-in;
+	transition: all 0.02s ease;
 }
 
 /* COMMON STYLES */
@@ -161,6 +172,10 @@ button:hover {
 	align-items: center;
 	padding: 14px 75px;
 	box-shadow: 0px 5px 40px 0px var(--color-black-shadow)
+}
+
+.burger {
+	display: none;
 }
 
 .logo-link {
@@ -576,33 +591,28 @@ button:hover {
   position: relative;
   display: flex;
 	justify-content: space-between;
-	border-top: 1px solid transparent;
+  border-top: 1px solid var(--color-grey-light);
 	border-bottom: 1px solid var(--color-grey-light);
 	cursor: pointer;
 }
 
-.faq__item {
-	margin-top: -1px;
-}
-
-.faq__item:first-child {
-  border-top: 1px solid var(--color-grey-light);
+.faq__item:not(:last-child) {
+  border-bottom: none;
 }
 
 .faq__item:focus {
 	outline: none;
 }
 
-.faq__item:hover {
-  border-top: 1px solid var(--color-orange-light);
-	border-bottom: 1px solid var(--color-orange-light);
-}
-
 .faq__item:hover,
 .faq__item:focus {
-	color: var(--color-orange-light);
-	border-top: 1px solid var(--color-orange-light);
-	border-bottom: 1px solid var(--color-orange-light);
+  color: var(--color-orange-light);
+  border-color: var(--color-orange-light);
+}
+
+.faq__item:hover  + .faq__item,
+.faq__item:focus  + .faq__item {
+  border-top-color: var(--color-orange-light);
 }
 
 .faq__item:hover .faq__button,
@@ -612,9 +622,13 @@ button:hover {
 }
 
 .faq__item:active {
-	color: inherit;
-	border-top: 1px solid var(--color-grey-light);
-	border-bottom: 1px solid var(--color-grey-light);
+  color: inherit;
+  border-color: var(--color-grey-light);
+}
+
+.faq__item:active + .faq__item {
+  border-top-color: var(--color-grey-light);
+
 }
 
 .faq__item:active .faq__button {
@@ -847,7 +861,6 @@ button:hover {
 .request__button:active {
 	background-color: var(--color-orange-dark);
 }
-
 
 /* SMALL TEXT */
 
