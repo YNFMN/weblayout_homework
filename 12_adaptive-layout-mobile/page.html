@@ -47,7 +47,12 @@
 	<main class="main">
 		<div class="main__container container">
 			<section class="hero">
-				<img class="hero__image" src="img/pic/hero1.jpg" alt="Фото здания">
+        <picture class="hero__picture">
+          <source media="(max-width: 320px)" srcset="img/pic/hero1@320.jpg">
+          <source media="(max-width: 768px)" srcset="img/pic/hero1@768.jpg">
+          <source media="(max-width: 1024px)" srcset="img/pic/hero1@1024.jpg">
+          <img class="hero__image" src="img/pic/hero1.jpg" alt="Фото здания">
+        </picture>
 
 				<div class="hero__content">
 					<h2 class="hero__title">Проектные решения любой сложности</h2>
@@ -90,7 +95,12 @@
 				<article class="main-card">
 					<h3 class="visually-hidden">Большая карточка с описанием</h3>
 
-					<img class="main-card__image" src="img/pic/worker.jpg" alt="Рабочий">
+          <picture class="main-card__picture">
+            <source media="(max-width: 320px)" srcset="img/pic/worker@320.jpg">
+            <source media="(max-width: 768px)" srcset="img/pic/worker@768.jpg">
+            <source media="(max-width: 1024px)" srcset="img/pic/worker@1024.jpg">
+            <img class="main-card__image" src="img/pic/worker.jpg" alt="Рабочий">
+          </picture>
 
 					<div class="main-card__container">
 						<p class="main-card__paragraph">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
@@ -153,16 +163,22 @@
 
 						<p class="work__paragraph">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
 
-						<button class="work__button work__button-details orange-button">
-							<a class="work__link" href="#">Подробнее</a>
-						</button>
+            <div class="work__two-buttons">
+              <button class="work__button work__button-details orange-button">
+                <a class="work__link" href="#">Подробнее</a>
+              </button>
 
-						<button class="work__button work__button-agreement">
-							<a class="work__link" href="#">Договор</a>
-						</button>
+              <button class="work__button work__button-agreement">
+                <a class="work__link" href="#">Договор</a>
+              </button>
+            </div>
 					</div>
-
-					<img class="work__image" src="img/pic/consultation.jpg" alt="Обсуждение">
+          <picture class="work__picture">
+            <source media="(max-width: 320px)" srcset="img/pic/consultation@320.jpg">
+            <source media="(max-width: 768px)" srcset="img/pic/consultation@768.jpg">
+            <source media="(max-width: 1024px)" srcset="img/pic/consultation@1024.jpg">
+					  <img class="work__image" src="img/pic/consultation.jpg" alt="Обсуждение">
+          </picture>
 				</article>
 			</section>
 
@@ -193,14 +209,14 @@
 					</li>
 					<li class="faq__item" tabindex="0">
             <article class="faq__article">
-						  <h3 class="faq__subtitle">Могу ли я делегировать вам работу / согласование с подрядчиком / организацией? </h3>
+						  <h3 class="faq__subtitle">Могу ли я делегировать вам работу / согласование с&nbsp;подрядчиком / организацией? </h3>
 
 						  <button class="faq__button"></button>
             </article>
 					</li>
 					<li class="faq__item" tabindex="0">
             <article class="faq__article">
-						  <h3 class="faq__subtitle">Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
+						  <h3 class="faq__subtitle">Могу ли я вернуть деньги на&nbsp;каком-либо из этапов работ?</h3>
 
 						  <button class="faq__button"></button>
             </article>
@@ -212,7 +228,7 @@
 
 	<footer class="footer">
 		<div class="footer__container container">
-			<div class="info footer-item">
+			<div class="info footer-item-left footer-item">
 				<img class="info__logo" src="img/pic/logo-white.png" alt="Логотип компании Евклид">
 
 				<ul class="info__list">
