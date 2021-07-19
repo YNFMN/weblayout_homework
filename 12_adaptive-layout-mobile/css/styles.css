@@ -379,7 +379,8 @@ button:hover {
 	display: flex;
 	justify-content: space-between;
 	bottom: 0;
-	width: 100%;
+  right: 0;
+  left: 0;
 	padding: 50px;
 	background-color: var(--color-black-transparent);
 }
@@ -468,7 +469,7 @@ button:hover {
 	max-width: 450px;
 }
 
-/* HOW WE WORK */
+/* WORK */
 
 .work {
 	margin-bottom: 100px;
@@ -490,7 +491,6 @@ button:hover {
 	font-size: 18px;
 	line-height: 22px;
 }
-
 
 .work__steps:hover {
 	color: var(--color-orange-light);
@@ -903,7 +903,7 @@ button:hover {
   }
 
   .about, .cards, .work, .faq {
-    width: 1770px;
+    max-width: 1770px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -935,17 +935,17 @@ button:hover {
   }
 }
 
-/* MEDIA <1440 */
+/* MEDIA 1650 */
 
-@media (max-width: 1440px) {
+@media (max-width: 1650px) {
 
-  /* NAV 1440 */
+  /* NAV 1650 */
 
   .nav__item:not(:last-child) {
     margin-right: 20px;
   }
 
-  /* HERO 1440 */
+  /* HERO 1650 */
 
   .hero {
     width: 100%;
@@ -955,13 +955,13 @@ button:hover {
     height: 668px;
   }
 
-  /* ABOUT 1440 */
+  /* ABOUT 1650 */
 
   .about__paragraph {
     max-width: 85%;
   }
 
-  /* CARDS 1440 */
+  /* CARDS 1650 */
 
   .cards {
     display: block;
@@ -977,7 +977,6 @@ button:hover {
 
   .main-card__image {
     width: 100%;
-    max-height: 660px;
   }
 
   .main-card__container {
@@ -997,8 +996,8 @@ button:hover {
   }
 
   .description-cards__article {
-    padding-right: 250px;
-    padding-left: 250px;
+    padding-right: 200px;
+    padding-left: 200px;
   }
 
   .description-cards__item:not(:last-child) {
@@ -1009,14 +1008,14 @@ button:hover {
     margin-right: 20px;
   }
 
-  /* WORK 1440 */
+  /* WORK 1650 */
 
   .work__image {
     max-width: 700px;
   }
 }
 
-/* MEDIA <1024 */
+/* MEDIA 1024 */
 
 @media (max-width: 1024px) {
 
@@ -1065,13 +1064,13 @@ button:hover {
   }
 
   .hero__title {
-    width: 770px;
+    max-width: 770px;
     font-size: 60px;
     line-height: 73px;
   }
 
   .hero__paragraph {
-    width: 660px;
+    max-width: 660px;
     margin-top: 16px;
     font-size: 20px;
     line-height: 24px;
@@ -1116,7 +1115,7 @@ button:hover {
 
   .work__paragraph {
     margin-bottom: 25px;
-    width: 437px;
+    max-width: 437px;
   }
 
   .work__button {
@@ -1275,11 +1274,11 @@ button:hover {
   }
 
   .request__input {
-    width: 541px;
+    max-width: 541px;
   }
 
   .request__textarea {
-    width: 517px;
+    max-width: 517px;
   }
 
   .request__button {
@@ -1389,7 +1388,6 @@ button:hover {
     margin-bottom: 80px;
   }
 
-
   .faq__subtitle {
     max-width: 570px;
   }
@@ -1427,48 +1425,27 @@ button:hover {
   }
 }
 
-/* MEDIA 320 */
+/* MEDIA <768 */
 
-@media (max-width: 320px) {
+@media (max-width: 767px) {
 
   :root {
     --padding-container: 15px;
-    --font-size-common: 14px;
-    --line-height-common: 28px;
   }
 
-  .section-title {
-    font-size: 24px;
-    line-height: 29px;
-  }
-
-  /* NAV 320 */
-
-  .nav {
-    padding: 17px 23px;
-  }
-
-  .logo-link__image {
-    width: 110px;
-    height: 35px;
-  }
-
-  /* HERO 320 */
-
-  .hero {
-    margin-bottom: 60px;
-  }
+  /* HERO <768 */
 
   .hero__image {
-    height: 308px;
+    width: 100%;
   }
 
   .hero__content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: 60px;
-    left: 22px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
   }
 
   .hero__title {
@@ -1493,39 +1470,7 @@ button:hover {
     line-height: 14.63px;
   }
 
-  .hero__slider {
-    bottom: 15px;
-    margin-left: -35px
-  }
-
-  .slider {
-    width: 70px;
-    height: 10px;
-  }
-
-  .slider__button {
-    width: 10px;
-    height: 10px;
-    background-size: cover;
-  }
-
-  .slider__list,
-  .slider__item {
-    line-height: 10px;
-    max-height: 10px;
-  }
-
-  /* ABOUT 320 */
-
-  .about {
-    margin-bottom: 8px;
-  }
-
-  /* CARDS 320 */
-
-  .cards {
-    margin-bottom: 60px;
-  }
+  /* CARDS <768 */
 
   .main_card__image {
     max-height: 200px;
@@ -1552,9 +1497,7 @@ button:hover {
     color: var(--color-orange-light)
   }
 
-  /* DESCRIPTION CARDS 320 */
-
-
+  /* DESCRIPTION CARDS <768 */
 
   .description-cards__article {
     flex-direction: column;
@@ -1584,20 +1527,11 @@ button:hover {
     line-height: 1;
   }
 
-  /* WORK 320 */
-
-  .work {
-    margin-bottom: 60px;
-  }
-
-  .work__list {
-    margin-bottom: 16px;
-  }
+  /* WORK <768 */
 
   .work__image {
-    width: 290px;
-    height: 160px;
-    margin-bottom: 16px;
+    width: 100%;
+    height: 100%;
   }
 
   .work__subtitle {
@@ -1626,35 +1560,21 @@ button:hover {
     height: 15px;
   }
 
-  /* FAQ 320 */
-
-  .faq {
-    margin-bottom: 60px;
-  }
-
-  .faq__title {
-    margin-bottom: 16px;
-  }
+  /* FAQ <768 */
 
   .faq__subtitle {
-    max-width: 220px;
+    max-width: calc(100% - 60px);
     font-weight: 500;
-    font-size: 14px;
     line-height: 24px;
   }
 
   .faq__button {
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
     background-size: cover;
   }
 
-  /* FOOTER 320 */
-
-  .footer__container {
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
+  /* FOOTER <768 */
 
   .footer-item-center {
     margin-bottom: 0;
@@ -1662,7 +1582,13 @@ button:hover {
   }
 
   .request {
+    display: flex;
+    align-content: center;
     border-bottom: 1px solid var(--color-grey-320);
+  }
+
+  .request__fieldset {
+    width: 100%;
   }
 
   .request__legend {
@@ -1672,25 +1598,22 @@ button:hover {
   }
 
   .request__list {
+    width: 100%;
     margin-bottom: 25px;
   }
 
   .request__input {
-    width: 290px;
+    max-width: 100%;
   }
 
   .request__textarea {
-    width: 546px;
+    max-width: calc(100% - 20px);
     height: 136px;
   }
 
   .request__input,
   .request__textarea {
     padding-left: 20px;
-  }
-
-  .request__textarea {
-    width: 270px;
   }
 
   .request__container {
@@ -1728,6 +1651,138 @@ button:hover {
   .social__link {
     width: 40px;
     height: 40px;
+  }
+}
+
+/* MEDIA 320 */
+
+@media (max-width: 320px) {
+
+  :root {
+    --font-size-common: 14px;
+    --line-height-common: 28px;
+  }
+
+  .section-title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
+  /* NAV 320 */
+
+  .nav {
+    padding: 17px 23px;
+  }
+
+  .logo-link__image {
+    width: 110px;
+    height: 35px;
+  }
+
+  /* HERO 320 */
+
+  .hero {
+    margin-bottom: 60px;
+  }
+
+  .hero__image {
+    height: 308px;
+  }
+
+  .hero__content {
+    top: 60px;
+    left: 22px;
+    transform: unset;
+  }
+
+  .hero__slider {
+    bottom: 15px;
+    margin-left: -35px
+  }
+
+  .slider {
+    width: 70px;
+    height: 10px;
+  }
+
+  .slider__button {
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+  }
+
+  .slider__list,
+  .slider__item {
+    height: 10px;
+    line-height: 10px;
+  }
+
+  /* ABOUT 320 */
+
+  .about {
+    margin-bottom: 8px;
+  }
+
+  /* CARDS 320 */
+
+  .cards {
+    margin-bottom: 60px;
+  }
+
+  /* WORK 320 */
+
+  .work {
+    margin-bottom: 60px;
+  }
+
+  .work__list {
+    margin-bottom: 16px;
+  }
+
+  .work__image {
+    width: 290px;
+    height: 160px;
+    margin-bottom: 16px;
+  }
+
+  /* FAQ 320 */
+
+  .faq {
+    margin-bottom: 60px;
+  }
+
+  .faq__title {
+    margin-bottom: 16px;
+  }
+
+  .faq__subtitle {
+    max-width: 220px;
+    font-size: 14px;
+  }
+
+  .faq__button {
+    width: 50px;
+    height: 50px;
+  }
+
+  /* FOOTER 320 */
+
+  .footer__container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer-item-center {
+    margin-bottom: 0;
+    padding-bottom: 16px;
+  }
+
+  .request__input {
+    max-width: 290px;
+  }
+
+  .request__textarea {
+    max-width: 270px;
   }
 }
 
