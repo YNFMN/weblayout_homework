@@ -1,0 +1,267 @@
+@font-face {
+	font-family: 'Graphik LCG';
+	src: url('fonts/GraphikLCG-Medium.woff2') format('woff2'),
+		url('fonts/GraphikLCG-Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/Gilroy-Regular.woff2') format('woff2'),
+		url('fonts/Gilroy-Regular.woff') format('woff');
+	font-display: swap;
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/Gilroy-ExtraBold.woff2') format('woff2'),
+		url('fonts/Gilroy-ExtraBold.woff') format('woff');
+	font-display: swap;
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/Gilroy-Medium.woff2') format('woff2'),
+		url('fonts/Gilroy-Medium.woff') format('woff');
+	font-display: swap;
+	font-weight: 500;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Gilroy', sans-serif;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.main-content {
+	background-color: #222020;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.skillbox-head {
+	color: white;
+	font-family: ‘Graphik LCG’, sans-serif;
+	margin-bottom: 30px;
+}
+
+.download-program {
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	background-color: #2f1ce4;
+	border: 3px solid #2f1ce4;
+}
+
+.more-info {
+	display: inline-block;
+	padding: 20px;
+	color: white;
+	background-color: rgba(255, 255, 255, 0);
+	border: 3px solid white;
+	min-width: 245px;
+	text-align: center;
+}
+
+.container {
+	width: 1170px;
+	margin: 0 auto;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.skillbox-logo {
+	display: block;
+	margin-bottom: 55px;
+	font-family: ‘Graphik LCG’, sans-serif;
+	font-size: 30px;
+	letter-spacing: 1px;
+}
+
+.back-button {
+	padding-left: 30px;
+	background-image: url(../img/return.png);
+	background-position: left center;
+	background-size: 18px 12px;
+	background-repeat: no-repeat;
+}
+
+.program-info {
+	margin-top: 100px;
+	padding-left: 100px;
+	font-size: 48px;
+	color: #222020;
+}
+
+.program-heading {
+	padding-left: 180px;
+	font-size: 36px;
+	color: #2f1ce4;
+	margin-top: 100px;
+	margin-bottom: 25px;
+}
+
+.reference {
+	color: #2f1ce4;
+	border-bottom: 1px solid #2f1ce4;
+}
+
+.program-list {
+	padding-left: 200px;
+	font-size: 18px;
+}
+
+.program-paragraph {
+	padding-left: 180px;
+	margin-bottom: 20px;
+}
+
+.paragraph-figure {
+	padding-left: 200px;
+	text-align: center;
+	display: inline-block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.paragraph-img {
+	max-width: 300px;
+	margin-bottom: 25px;
+}
+
+.grey-container {
+	background-color: rgb(249, 249, 249);
+	padding-bottom: 100px;
+	margin-bottom: 50px;
+}
+
+.grey-heading {
+	margin-top: 0px;
+	padding-top: 100px;
+}
+
+table {
+	margin-left: 100px;
+}
+
+table, td, th {
+	border: 1px solid #a0a0a0;
+	border-collapse: collapse;
+	padding: 10px 5px;
+	max-width: 980px;
+}
+
+.table-caption {
+	margin-bottom: 30px;
+}
+
+.table-footer {
+	text-align: center;
+}
+
+.module-info {
+	margin-bottom: 30px;
+}
+
+.module-card {
+	display: inline-block;
+	position: relative;
+	min-width: 480px;
+	min-height: 500px;
+	margin-left: 60px;
+	margin-top: 55px;
+	vertical-align: top;
+	box-shadow: 0px 1px 13px -7px #000000;
+	background-size: 480px 175px;
+	background-repeat: no-repeat;
+}
+
+.module-pic-1 {
+	background-image: url(../img/module-1.jpg);
+}
+
+.module-pic-2 {
+	background-image: url(../img/module-2.jpg);
+}
+
+.module-pic-3 {
+	background-image: url(../img/module-3.jpg);
+}
+
+.module-pic-4 {
+	background-image: url(../img/module-4.jpg);
+}
+
+.module-heading {
+	padding-top: 205px;
+	padding-left: 50px;
+	padding-bottom: 30px;
+	font-size: 24px;
+	letter-spacing: 1px;
+	color: #2f1ce4;
+}
+
+.module-list {
+	list-style-type: none;
+	padding-left: 50px;
+}
+
+.module-list li {
+	padding-bottom: 15px;
+}
+
+.module-list li:last-child {
+	padding-bottom: 0;
+}
+
+.module-footer {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
+}
+
+.module-number {
+	display: inline-block;
+	margin-right: 25px;
+	margin-bottom: 30px;
+	font-size: 30px;
+	color: rgba(0, 0, 0, 0.1);
+}
+
+.more-modules {
+	display: block;
+	background-color: rgba(255, 255, 255, 0);
+	border: 3px solid #2f1ce4;
+	padding: 20px 75px;
+	color: #2f1ce4;
+	margin: 100px auto;
+}
+
+.module-container {
+	width: 1920px;
+	padding-bottom: 500px;
+	background-image: url(../img/back.svg);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: bottom;
+}
