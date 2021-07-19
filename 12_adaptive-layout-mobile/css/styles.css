@@ -1451,16 +1451,16 @@ button:hover {
   .hero__title {
     max-width: 247px;
     text-align: center;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 40px;
+    line-height: 1;
   }
 
   .hero__paragraph {
     max-width: 247px;
     margin-top: 24px;
     text-align: center;
-    font-size: 12px;
-    line-height: 14.63px;
+    font-size: 18px;
+    line-height: 1;
   }
 
   .hero__button {
@@ -1693,6 +1693,16 @@ button:hover {
     top: 60px;
     left: 22px;
     transform: unset;
+  }
+
+  .hero__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .hero__paragraph {
+    font-size: 12px;
+    line-height: 14.63px;
   }
 
   .hero__slider {
