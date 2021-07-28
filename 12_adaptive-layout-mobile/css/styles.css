@@ -114,6 +114,7 @@ button, fieldset, textarea {
 	all: unset;
 }
 
+
 .request-input {
 	all: unset;
 }
@@ -524,6 +525,7 @@ button:hover {
 .work__two-buttons {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 354px;
 }
 
@@ -533,7 +535,6 @@ button:hover {
 }
 
 .work__button-details {
-	margin-right: 28px;
 	padding: 20px 38px;
 	font-weight: 700;
 }
@@ -792,6 +793,7 @@ button:hover {
 }
 
 .request__list {
+  max-width: 570px;
 	margin-bottom: 32px;
 }
 
@@ -803,8 +805,12 @@ button:hover {
 	display: block;
 }
 
+.request__item {
+  width: 100%;
+}
+
 .request__input {
-	width: 570px;
+  width: 570px;
 	height: 60px;
 }
 
@@ -916,6 +922,10 @@ button:hover {
     display: flex;
     justify-content: space-between;
   }
+
+  .social__item:not(:last-child) {
+    margin-right: 10px;
+}
 }
 
 /* MEDIA <1920 */
@@ -1131,7 +1141,6 @@ button:hover {
   }
 
   .work__subtitle {
-    /* margin-top: -5px; */
     margin-bottom: 8px;
 
   }
@@ -1147,7 +1156,6 @@ button:hover {
   }
 
   .work__button-details {
-    margin-right: 28px;
     padding: 20px 38px;
     font-weight: 700;
   }
@@ -1161,7 +1169,7 @@ button:hover {
   }
 
   .work__image {
-    width: 437px;
+    max-width: 437px;
     height: 689px;
   }
 
@@ -1195,6 +1203,13 @@ button:hover {
 
   .faq__button:focus {
     outline: none;
+  }
+
+  /* FOOTER 1024 */
+
+  .footer__container {
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   /* INFO 1024 */
@@ -1290,7 +1305,7 @@ button:hover {
   /* REQUEST FORM 1024 */
 
   .footer-item-center {
-    margin-left: auto;
+    margin-left: 0;
   }
 
   .request__legend {
@@ -1298,7 +1313,7 @@ button:hover {
   }
 
   .request__input {
-    max-width: 541px;
+    width: 540px;
   }
 
   .request__textarea {
@@ -1409,7 +1424,7 @@ button:hover {
   .work__image {
     order: 1;
     margin-bottom: 38px;
-    width: 668px;
+    max-width: 668px;
     height: 284px;
   }
 
@@ -1570,6 +1585,10 @@ button:hover {
 
   /* WORK <768 */
 
+  .work__picture {
+    align-self: center;
+  }
+
   .work__image {
     width: 100%;
     height: 100%;
@@ -1586,7 +1605,7 @@ button:hover {
   }
 
   .work__two-buttons {
-    max-width: 100%;
+    max-width: 300px;
   }
 
   .work__button {
@@ -1595,7 +1614,6 @@ button:hover {
   }
 
   .work__button-details {
-    margin-right: 0;
     padding: 12px 44px;
   }
 
@@ -1636,7 +1654,9 @@ button:hover {
   }
 
   .request__fieldset {
-    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
   }
 
   .request__legend {
@@ -1646,16 +1666,15 @@ button:hover {
   }
 
   .request__list {
-    width: 100%;
     margin-bottom: 25px;
   }
 
   .request__input {
-    max-width: 100%;
+    max-width: 290px;
   }
 
   .request__textarea {
-    max-width: calc(100% - 20px);
+    max-width: 270px;
     height: 136px;
   }
 
