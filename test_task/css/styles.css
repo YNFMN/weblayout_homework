@@ -1,3 +1,16 @@
+/* @font-face {
+	font-family: 'Montserrat';
+	src: url('../fonts/montserrat-regular.eot');
+	src: local('Montserrat Regular'), local('Montserrat-Regular'),
+		url('../fonts/montserrat-regular.woff2') format('woff2'),
+		url('../fonts/montserrat-regular.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+} */
+
+/* RESET CSS */
+
 * {
 	padding: 0;
 	margin: 0;
@@ -88,4 +101,29 @@ button::-moz-focus-inner {
 :active {
   outline: none;
 }
+
+/* COMMON STYLES */
+
+body {
+	height: 100vh;
+}
+
+/* :root {
+	--color-white: #fff;
+} */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.container {
+	/* max-width: 1920px; */
+	margin: 0 auto;
+	padding: 0 100px;
+}
+
 
