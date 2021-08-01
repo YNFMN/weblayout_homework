@@ -9,6 +9,73 @@
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 	<body>
+		<h1 class="visually-hidden">Название сайта</h1>
 
+		<header class="header">
+			<div class="header__container container">
+				<div class="header__logo"></div>
+
+				<button class="header__button common-button border-radius-common">Войти</button>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="main__container container">
+				<section class="main__section">
+					<h2 class="main__title">Начните торговать прямо сейчас</h2>
+
+					<ul class="main__list advantage-list">
+						<li class="advantage-list__item">Нет спреда — торгуйте с прозрачными и точными котировками</li>
+						<li class="advantage-list__item">Достаточно депозита в $10, чтобы начать торговать</li>
+					</ul>
+
+					<form class="main__form registration" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete="on">
+						<fieldset class="registration__fieldset">
+							<legend class="registration__legend visually-hidden">Форма регистрации</legend>
+
+							<ul class="registration__list">
+								<li class="registration__item">
+									<input class="registration__input border-radius-common" id="email" type="email" name="email"  required>
+
+									<label class="registration__label" for="email">Ваш e-mail</label>
+								</li>
+								<li class="registration__item">
+									<input class="registration__input border-radius-common" id="password" type="password" name="password" minlength="4" required>
+
+									<label class="registration__label" for="password">Придумайте пароль</label>
+								</li>
+								<li class="registration__item">
+									<fieldset class="radio-fieldset">
+										<legend class="radio-fieldset__legend">Валюта для ввода и вывода средств</legend>
+
+										<ul class="radio-fieldset__list">
+											<li class="radio-fieldset__item">
+												<input class="radio-fieldset__input" type="radio" name="currency" value="rub" checked>
+											</li>
+											<li class="radio-fieldset__item">
+												<input class="radio-fieldset__input" type="radio" name="currency" value="dollar" tabindex="0">
+											</li>
+											<li class="radio-fieldset__item">
+												<input class="radio-fieldset__input" type="radio" name="currency" value="euro" tabindex="0">
+											</li>
+										</ul>
+									</fieldset>
+								</li>
+							</ul>
+
+							<div class="registration__container">
+								<input class="registration__checkbox" id="registration-checkbox" type="checkbox" name="accept" required>
+
+								<label for="registration-checkbox">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</label>
+							</div>
+
+							<button class="registration__button common-button border-radius-common" type="submit">Зарегистрироваться</button>
+						</fieldset>
+					</form>
+				</section>
+
+				<div class="background"></div>
+			</div>
+		</main>
 	</body>
 </html>
