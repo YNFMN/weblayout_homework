@@ -306,6 +306,8 @@ label {
   opacity: 1;
 }
 
+/* RADIO BUTTONS */
+
 .radio-container {
 	display: flex;
 	justify-content: space-between;
@@ -322,6 +324,11 @@ label {
 	background-color: var(--color-background-elements);
 }
 
+.radio-container__item:focus{
+	outline: none;
+	outline-offset: none;
+}
+
 .radio-container__item {
 	display: inline-block;
 	padding-top: 8px;
@@ -330,16 +337,29 @@ label {
 	height: 32px;
 	text-align: center;
 	font-size: 16px;
+	border: 1px solid transparent;
+	cursor: pointer;
+}
+
+.radio-container__item:hover,
+.radio-container__item:focus,
+.radio-container__item:active {
+	background-color:var(--color-background-body);
+}
+
+.radio-container__item-active{
+	border-color: var(--color-green);
 }
 
 .radio-container__input {
 	display: none;
 }
 
+/* CHECKBOX */
+
 .registration__container {
 	display: flex;
 	justify-content: space-between;
-	margin-bottom: 32px;
 }
 
 .registration__checkbox {
@@ -353,7 +373,7 @@ label {
 }
 
 .registration__checkbox-custom-active {
-	background-image: url(../img/icon/check.png);
+	background-image: url('../img/icon/check.png');
 	background-position: center;
 	background-size: 18px 14px;
 	background-repeat: no-repeat;
@@ -364,7 +384,10 @@ label {
 	max-width: 392px;
 }
 
+/* REGISTRATION BUTTON */
+
 .registration__button {
+	margin-top: 32px;
 	padding-top: 16px;
 	padding-bottom: 16px;
 	width: 100%;
@@ -374,6 +397,82 @@ label {
 .registration__button:active {
 	background-color: var(--color-green-active);
 }
+
+/* VALIDATION ERRORS */
+
+.error-common {
+	line-height: 24px;
+	color: white;
+	background-color: var(--color-orange);
+}
+
+/* вешать при ошибке валдиции инпута */
+
+.registration__input-invalid {
+	border-color: var(--color-orange);
+}
+
+.error-container {
+	position: absolute;
+	left: 50%;
+	margin-left: -140px;
+	transform: translateY(-130%);
+}
+
+.error {
+	display: none;
+	position: relative;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	width: 280px;
+	text-align: center;
+}
+
+.error::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-bottom: -7px;
+	margin-left: -7px;
+	width: 0;
+	height: 0;
+	border: 8px solid transparent;
+	border-bottom: 0;
+	border-top-color: var(--color-orange);
+}
+
+/* повесить при ошибке на полях ввода */
+
+.error-on {
+	display: block;
+}
+
+.registration__error {
+	display: none;
+	margin-top: 24px;
+	padding: 8px 24px 8px 64px;
+	width: 100%;
+	background-image: url('../img/icon/attention.png');
+	background-position: 24px center;
+	background-size: 17px 17px;
+	background-repeat: no-repeat;
+}
+
+/* вешать одновременно с баттон еррор */
+
+.registration__error-on  {
+	display: block;
+}
+
+/* вешать одновременно с регистр еррор */
+
+.registration__button-error {
+	margin-top: 16px;
+}
+
 
 
 

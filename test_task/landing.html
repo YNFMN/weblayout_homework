@@ -29,17 +29,25 @@
 						<li class="advantage-list__item">Достаточно депозита в $10, чтобы начать торговать</li>
 					</ul>
 
-					<form class="main__form registration" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete="on">
+					<form class="main__form registration" action="https://jsonplaceholder.typicode.com/posts" method="POST" novalidate autocomplete="on">
 						<fieldset class="registration__fieldset">
 							<legend class="registration__legend visually-hidden">Форма регистрации</legend>
 
 							<ul class="registration__list">
 								<li class="registration__item">
+									<div class="error-container">
+										<div class="error error-common border-radius-common">Неверный e-mail</div>
+									</div>
+
 									<input class="registration__input border-radius-common" id="email" type="email" name="email"  required>
 
 									<label class="registration__label" for="email">Ваш e-mail</label>
 								</li>
 								<li class="registration__item">
+									<div class="error-container">
+										<div class="error error-common border-radius-common">Неверный пароль</div>
+									</div>
+
 									<input class="registration__input border-radius-common" id="password" type="password" name="password" minlength="4" required>
 
 									<label class="registration__label" for="password">Придумайте пароль</label>
@@ -49,13 +57,13 @@
 										<h3 class="radio-container__heading">Валюта для ввода и вывода средств</h3>
 
 										<ul class="radio-container__list border-radius-common">
-											<li class="radio-container__item">Р
+											<li class="radio-container__item" tabindex="0">Р
 												<input class="radio-container__input" type="radio" name="currency" value="rub" checked>
 											</li>
-											<li class="radio-container__item">S
+											<li class="radio-container__item" tabindex="0">S
 												<input class="radio-container__input" type="radio" name="currency" value="dollar" tabindex="0">
 											</li>
-											<li class="radio-container__item">E
+											<li class="radio-container__item" tabindex="0">E
 												<input class="radio-container__input" type="radio" name="currency" value="euro" tabindex="0">
 											</li>
 										</ul>
@@ -64,12 +72,14 @@
 							</ul>
 
 							<div class="registration__container">
-								<div class="registration__checkbox-custom border-radius-common">
+								<div class="registration__checkbox-custom border-radius-common" tabindex="0">
 									<input class="registration__checkbox" id="registration-checkbox" type="checkbox" name="accept" required>
 								</div>
 
 								<label class="registration__accept" for="registration-checkbox">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</label>
 							</div>
+
+							<div class="registration__error error-common border-radius-common">Учётная запись с указанным e-mail уже существует</div>
 
 							<button class="registration__button common-button border-radius-common" type="submit">Зарегистрироваться</button>
 						</fieldset>
