@@ -45,28 +45,30 @@
 									<label class="registration__label" for="password">Придумайте пароль</label>
 								</li>
 								<li class="registration__item">
-									<fieldset class="radio-fieldset">
-										<legend class="radio-fieldset__legend">Валюта для ввода и вывода средств</legend>
+									<div class="radio-container">
+										<h3 class="radio-container__heading">Валюта для ввода и вывода средств</h3>
 
-										<ul class="radio-fieldset__list">
-											<li class="radio-fieldset__item">
-												<input class="radio-fieldset__input" type="radio" name="currency" value="rub" checked>
+										<ul class="radio-container__list border-radius-common">
+											<li class="radio-container__item">Р
+												<input class="radio-container__input" type="radio" name="currency" value="rub" checked>
 											</li>
-											<li class="radio-fieldset__item">
-												<input class="radio-fieldset__input" type="radio" name="currency" value="dollar" tabindex="0">
+											<li class="radio-container__item">S
+												<input class="radio-container__input" type="radio" name="currency" value="dollar" tabindex="0">
 											</li>
-											<li class="radio-fieldset__item">
-												<input class="radio-fieldset__input" type="radio" name="currency" value="euro" tabindex="0">
+											<li class="radio-container__item">E
+												<input class="radio-container__input" type="radio" name="currency" value="euro" tabindex="0">
 											</li>
 										</ul>
-									</fieldset>
+									</div>
 								</li>
 							</ul>
 
 							<div class="registration__container">
-								<input class="registration__checkbox" id="registration-checkbox" type="checkbox" name="accept" required>
+								<div class="registration__checkbox-custom border-radius-common">
+									<input class="registration__checkbox" id="registration-checkbox" type="checkbox" name="accept" required>
+								</div>
 
-								<label for="registration-checkbox">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</label>
+								<label class="registration__accept" for="registration-checkbox">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</label>
 							</div>
 
 							<button class="registration__button common-button border-radius-common" type="submit">Зарегистрироваться</button>
@@ -77,6 +79,8 @@
 				<div class="background"></div>
 			</div>
 		</main>
+
+		<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
 
 		<script src="script.js"></script>
 	</body>

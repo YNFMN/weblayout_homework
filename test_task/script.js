@@ -2,15 +2,15 @@ $(document).ready(function() {
 
 	//RADIO BUTTON
 
-	$.each($('.radio-fieldset__item'), function(index, val) {
+	$.each($('.radio-container__item'), function(index, val) {
 		if($(this).find('input').prop('checked')==true) {
-			$(this).addClass('radio-fieldset__item-active');
+			$(this).addClass('radio-container__item-active');
 		};
 	});
-	$(document).on('click', '.radio-fieldset__item', function(event) {
-		$(this).parents('.radio-fieldset__list').find('.radio-fieldset__item').removeClass('radio-fieldset__item-active');
-		$(this).parents('.radio-fieldset__list').find('.radio-fieldset__item input').prop('checked',false);
-		$(this).toggleClass('radio-fieldset__item-active');
+	$(document).on('click', '.radio-container__item', function(event) {
+		$(this).parents('.radio-container__list').find('.radio-container__item').removeClass('radio-container__item-active');
+		$(this).parents('.radio-container__list').find('.radio-container__item input').prop('checked',false);
+		$(this).toggleClass('radio-container__item-active');
 		$(this).find('input').prop('checked',true);
 		return false;
 	});
