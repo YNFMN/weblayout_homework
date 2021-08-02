@@ -29,7 +29,7 @@
 						<li class="advantage-list__item">Достаточно депозита в $10, чтобы начать торговать</li>
 					</ul>
 
-					<form class="main__form registration" action="https://jsonplaceholder.typicode.com/posts" method="POST" novalidate autocomplete="on">
+					<form class="main__form registration" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete="on">
 						<fieldset class="registration__fieldset">
 							<legend class="registration__legend visually-hidden">Форма регистрации</legend>
 
@@ -61,10 +61,10 @@
 												<input class="radio-container__input" type="radio" name="currency" value="rub" checked>
 											</li>
 											<li class="radio-container__item" tabindex="0">S
-												<input class="radio-container__input" type="radio" name="currency" value="dollar" tabindex="0">
+												<input class="radio-container__input" type="radio" name="currency" value="dollar">
 											</li>
 											<li class="radio-container__item" tabindex="0">E
-												<input class="radio-container__input" type="radio" name="currency" value="euro" tabindex="0">
+												<input class="radio-container__input" type="radio" name="currency" value="euro">
 											</li>
 										</ul>
 									</div>
@@ -77,7 +77,7 @@
 								</div>
 
 								<div class="registration__checkbox-custom border-radius-common" tabindex="0">
-									<input class="registration__checkbox" id="registration-checkbox" type="checkbox" name="accept" required>
+									<input class="registration__checkbox visually-hidden" id="registration-checkbox" type="checkbox" name="accept" required>
 								</div>
 
 								<label class="registration__accept" for="registration-checkbox">Я совершеннолетний, ознакомился и принимаю соглашение об оказании услуг.</label>

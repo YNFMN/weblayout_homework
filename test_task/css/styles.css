@@ -363,9 +363,9 @@ label {
 	justify-content: space-between;
 }
 
-.registration__checkbox {
+/* .registration__checkbox {
 	display: none;
-}
+} */
 
 .registration__checkbox-custom {
 	width: 32px;
@@ -448,13 +448,9 @@ label {
 	border-top-color: var(--color-orange);
 }
 
-/* вешать при ошибке валдиции инпута одновменно с дивом ниже */
-
 .registration__input-invalid {
 	border-color: var(--color-orange);
 }
-
-/* повесить при ошибке на полях ввода одновременн ос бордером выше */
 
 .error-on {
 	display: block;
@@ -479,13 +475,10 @@ label {
 	left: 16px;
 }
 
-/* вешать одновременно с баттон еррор */
-
 .registration__error-on  {
 	display: block;
 }
 
-/* вешать одновременно с регистр еррор */
 
 .registration__button-error {
 	margin-top: 16px;
