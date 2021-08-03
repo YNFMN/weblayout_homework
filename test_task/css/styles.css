@@ -191,7 +191,7 @@ label {
 	padding: 7px 17.7px 7px 47.3px;
 	background-color: inherit;
 	background-image: url('../img/icon/user.svg');
-	background-position: 20px center;
+	background-position: 16px center;
 	background-size: 24px 24px;
 	background-repeat: no-repeat;
 	border: 1px solid var(--color-border-button);
@@ -217,6 +217,7 @@ label {
 	font-size: 36px;
 	line-height: 48px;
 	color: var(--color-white);
+	letter-spacing: 2px;
 }
 
 .main__list {
@@ -227,13 +228,17 @@ label {
 	padding-left: 40px;
 	line-height: 24px;
 	background-image: url('../img/icon/check.png');
-	background-position: left top;
+	background-position: 2px 5px;
 	background-size: 18px 14px;
 	background-repeat: no-repeat;
 }
 
 .advantage-list__item:not(:last-child) {
-	margin-bottom: 24px;
+	margin-bottom: 16px;
+}
+
+.advantage-list__item:last-child {
+	white-space: nowrap;
 }
 
 /* FORM */
@@ -337,18 +342,31 @@ label {
 	height: 32px;
 	text-align: center;
 	font-size: 16px;
-	border: 1px solid transparent;
+	border: 1px solid var(--color-background-body);
+	border-right-width: 0;
 	cursor: pointer;
 }
 
+.radio-container__item:last-child {
+	border-right-width: 1px;
+}
+
 .radio-container__item:hover,
-.radio-container__item:focus,
-.radio-container__item:active {
+.radio-container__item:focus {
 	background-color:var(--color-background-body);
 }
 
 .radio-container__item-active{
+	background-color:var(--color-background-body);
 	border-color: var(--color-green);
+}
+
+.radio-container__item-active {
+	border: 1px solid var(--color-green);
+}
+
+.radio-container__item-active + .radio-container__item {
+	border-left-width: 0;
 }
 
 .radio-container__input {
@@ -362,10 +380,6 @@ label {
 	display: flex;
 	justify-content: space-between;
 }
-
-/* .registration__checkbox {
-	display: none;
-} */
 
 .registration__checkbox-custom {
 	width: 32px;
@@ -484,43 +498,13 @@ label {
 	margin-top: 16px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .background {
-	margin-top: 10px;
+	margin-top: 16px;
 	width: 808px;
 	height: 613px;
 	background-image: url('../img/pic/iphone.png'), url('../img/pic/macbook.png');
-	background-position: bottom left, right;
-	background-size: 245px 482px, 800px 613px;
+	background-position: bottom left, bottom right;
+	background-size: 245px 482px, 794px 613px;
 	background-repeat: no-repeat, no-repeat;
 }
 
