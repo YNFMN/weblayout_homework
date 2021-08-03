@@ -240,6 +240,11 @@ label {
 	white-space: nowrap;
 }
 
+.bigres__title,
+.bigres__list {
+	display: none;
+}
+
 /* FORM */
 
 .registration__list {
@@ -741,6 +746,54 @@ label {
 	.background {
 		margin: auto;
 		margin-right: 0;
+	}
+}
+
+/* MEDIA > 3400 */
+
+@media (min-width: 3400px) {
+	.main__container {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 200px;
+	}
+
+	.main__title,
+	.main__list {
+		display: none;
+	}
+
+	.bigres__title,
+	.bigres__list {
+		display: block;
+	}
+
+	.main__section {
+		margin: 0;
+	}
+
+	.main__section,
+	.main__title,
+	.main__list {
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+
+	.main__title {
+		font-size: 50px;
+		line-height: 1.2;
+	}
+
+	.main__list {
+		margin-right: auto;
+		margin-left: auto;
+		font-size: 30px;
+		line-height: 1.2;
+	}
+
+	.main__list,
+	.main__title {
+		max-width: 440px;
 	}
 }
 
