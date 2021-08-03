@@ -290,7 +290,7 @@ label {
 
 .registration__input:focus {
 	outline: none;
-	outline-offset: none;
+	outline-offset: 0;
 }
 
 .registration__input:hover,
@@ -331,7 +331,7 @@ label {
 
 .radio-container__item:focus{
 	outline: none;
-	outline-offset: none;
+	outline-offset: 0;
 }
 
 .radio-container__item {
