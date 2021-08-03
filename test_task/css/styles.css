@@ -507,6 +507,127 @@ label {
 	background-repeat: no-repeat, no-repeat;
 }
 
+/* MEDIA >1440 */
+
+@media (min-width: 1441px) {
+
+	html,
+	body {
+		line-height: 1;
+		font-size: 20px;
+	}
+	.container {
+		max-width: 80%;
+	}
+
+	/* .common-button {
+		font-size: 16px;
+		line-height: 24px;
+	} */
+
+	/* label {
+		font-size: 12px;
+		line-height: 16px;
+	} */
+
+	/* HEADER >1440 */
+
+	.header {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.header__logo {
+		width: 400px;
+		height: 45px;
+	}
+
+	/* .header__button {
+		padding: 7px 17.7px 7px 47.3px;
+		background-color: inherit;
+		background-image: url('../img/icon/user.svg');
+		background-position: 16px center;
+		background-size: 24px 24px;
+		background-repeat: no-repeat;
+		border: 1px solid var(--color-border-button);
+	} */
+
+	/* MAIN >1440 */
+
+	.main__container {
+		max-width: 90%;
+	}
+
+	.main__section {
+		margin: auto;
+	}
+
+	.main__title {
+		margin-bottom: 50px;
+		font-size: 42px;
+		line-height: 52px;
+	}
+
+	.main__list {
+		margin-bottom: 68px;
+	}
+
+	.advantage-list__item {
+		line-height: 30px;
+	}
+
+	.advantage-list__item:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	.advantage-list__item:last-child {
+		white-space: initial;
+	}
+
+	/* FORM >1440 */
+
+	.registration__list {
+		margin-bottom: 30px;
+	}
+
+	.registration__item:not(:last-child) {
+		margin-bottom: 25px;
+	}
+
+	/* RADIO BUTTONS >1440 */
+
+	.radio-container__heading {
+		font-size: 14px;
+		line-height: 1;
+	}
+
+	.registration__accept {
+		font-size: 14px;
+	}
+
+	/* REGISTRATION BUTTON >1440 */
+
+	.registration__button {
+		margin-top: 40px;
+	}
+
+	/* VALIDATION ERRORS >1440 */
 
 
+
+	.background {
+		width: 60%;
+		height: 1000px;
+		background-size: 30% 87%, 98% 100%;
+	}
+}
+
+/* MEDIA >3300 */
+
+@media (min-width: 3300px) {
+	.background {
+		width: 60%;
+		height: 1200px;
+	}
+}
 
