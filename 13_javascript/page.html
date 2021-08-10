@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>Евклид</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<h1 class="visually-hidden">Евклид проектные системы</h1>
+	<header class="header">
+		<div class="container">
+			<nav class="nav">
+        <button class="burger"></button>
+
+				<a class="logo-link" href="#">
+					<img class="logo-link__image" src="img/pic/logo-black.png" alt="Логотип компании Евклид">
+				</a>
+
+				<div class="nav__menu">
+					<ul class="nav__list">
+						<li class="nav__item">
+							<a href="#" class="nav__link">О нас</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Проекты</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Этапы</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Отзывы</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Контакты</a>
+						</li>
+					</ul>
+
+					<button class="nav__search"></button>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+		<div class="main__container container">
+			<section class="hero">
+        <picture class="hero__picture">
+          <source media="(max-width: 320px)" srcset="img/pic/hero1@320.jpg">
+          <source media="(max-width: 768px)" srcset="img/pic/hero1@768.jpg">
+          <source media="(max-width: 1024px)" srcset="img/pic/hero1@1024.jpg">
+          <img class="hero__image" src="img/pic/hero1.jpg" alt="Фото здания">
+        </picture>
+
+				<div class="hero__content">
+					<h2 class="hero__title">Проектные решения любой сложности</h2>
+
+					<p class="hero__paragraph">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов </p>
+
+					<button class="hero__button orange-button">Заказать расчёт</button>
+				</div>
+
+				<div class="hero__slider slider">
+					<ul class="slider__list">
+						<li class="slider__item">
+							<button class="slider__button">
+								<label class="slider__label visually-hidden">Первая кнопка</label>
+							</button>
+						</li>
+						<li class="slider__item">
+							<button class="slider__button slider__button-inactive">
+								<label class="slider__label visually-hidden">Вторая кнопка</label>
+							</button>
+						</li>
+						<li class="slider__item">
+							<button class="slider__button slider__button-inactive">
+								<label class="slider__label visually-hidden">Третья кнопка</label>
+							</button>
+						</li>
+					</ul>
+				</div>
+			</section>
+
+			<section class="about">
+				<h2 class="about__title section-title">О нас</h2>
+
+				<p class="about__paragraph">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.</p>
+			</section>
+
+			<section class="cards">
+				<h2 class="visually-hidden">О нас в карточках</h2>
+
+				<article class="main-card">
+					<h3 class="visually-hidden">Большая карточка с описанием</h3>
+
+          <picture class="main-card__picture">
+            <source media="(max-width: 320px)" srcset="img/pic/worker@320.jpg">
+            <source media="(max-width: 768px)" srcset="img/pic/worker@768.jpg">
+            <source media="(max-width: 1024px)" srcset="img/pic/worker@1024.jpg">
+            <img class="main-card__image" src="img/pic/worker.jpg" alt="Рабочий">
+          </picture>
+
+					<div class="main-card__container">
+						<p class="main-card__paragraph">Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов.</p>
+
+						<button class="main-card__button">Подробнее</button>
+					</div>
+				</article>
+
+				<section class="description-cards">
+					<h3 class="visually-hidden">Маленькие карточки с описанием</h3>
+
+					<ul class="description-cards__list">
+						<li class="description-cards__item">
+							<article class="description-cards__article">
+								<div class="description-cards__icon description-cards__icon-box"></div>
+
+								<div class="description-cards__container">
+									<h3 class="card-title description-cards__title">Консультация с широким активом</h3>
+
+									<p class="description-cards__paragraph">А также свежий взгляд на привычные вещи - безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений.</p>
+								</div>
+							</article>
+						</li>
+						<li class="description-cards__item">
+							<article class="description-cards__article">
+								<div class="description-cards__icon description-cards__icon-settings"></div>
+
+								<div class="description-cards__container">
+									<h3 class="card-title description-cards__title">В своём стремлении повысить</h3>
+
+									<p class="description-cards__paragraph">Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества.</p>
+								</div>
+							</article>
+						</li>
+					</ul>
+				</section>
+			</section>
+
+			<section class="work">
+				<h2 class="work__title section-title">Как мы работаем</h2>
+
+				<ol class="work__list">
+					<li class="work__item">
+						<button class="work__steps work__steps-active">1 шаг</button>
+					</li>
+					<li class="work__item">
+						<button class="work__steps">2 шаг</button>
+					</li>
+					<li class="work__item">
+						<button class="work__steps">3 шаг</button>
+					</li>
+					<li class="work__item">
+						<button class="work__steps">4 шаг</button>
+					</li>
+				</ol>
+
+				<article class="work__article">
+					<div class="work__container">
+						<h3 class="work__subtitle">Проводим консультацию</h3>
+
+						<p class="work__paragraph">Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.</p>
+
+            <div class="work__two-buttons">
+              <button class="work__button work__button-details orange-button">
+                <a class="work__link" href="#">Подробнее</a>
+              </button>
+
+              <button class="work__button work__button-agreement">
+                <a class="work__link" href="#">Договор</a>
+              </button>
+            </div>
+					</div>
+          <picture class="work__picture">
+            <source media="(max-width: 320px)" srcset="img/pic/consultation@320.jpg">
+            <source media="(max-width: 768px)" srcset="img/pic/consultation@768.jpg">
+            <source media="(max-width: 1024px)" srcset="img/pic/consultation@1024.jpg">
+					  <img class="work__image" src="img/pic/consultation.jpg" alt="Обсуждение">
+          </picture>
+				</article>
+			</section>
+
+			<section class="faq">
+				<h2 class="faq__title section-title">Часто задаваемые вопросы</h2>
+
+				<ul class="faq__list">
+					<li class="faq__item" tabindex="0">
+            <article class="faq__article">
+						  <h3 class="faq__subtitle">Из чего формируется конечная стоимость проекта?</h3>
+
+						  <button class="faq__button"></button>
+            </article>
+					</li>
+					<li class="faq__item" tabindex="0">
+            <article class="faq__article">
+						  <h3 class="faq__subtitle">У меня есть свой проект. Сможем ли мы его доработать / реализовать?</h3>
+
+						  <button class="faq__button"></button>
+            </article>
+					</li>
+					<li class="faq__item" tabindex="0">
+            <article class="faq__article">
+						  <h3 class="faq__subtitle">Я выбираю между разными компаниями. В чём ваше отличие?</h3>
+
+						  <button class="faq__button"></button>
+            </article>
+					</li>
+					<li class="faq__item" tabindex="0">
+            <article class="faq__article">
+						  <h3 class="faq__subtitle">Могу ли я делегировать вам работу / согласование с&nbsp;подрядчиком / организацией? </h3>
+
+						  <button class="faq__button"></button>
+            </article>
+					</li>
+					<li class="faq__item" tabindex="0">
+            <article class="faq__article">
+						  <h3 class="faq__subtitle">Могу ли я вернуть деньги на&nbsp;каком-либо из этапов работ?</h3>
+
+						  <button class="faq__button"></button>
+            </article>
+					</li>
+				</ul>
+			</section>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="footer__container container">
+			<div class="info footer-item-left footer-item">
+				<img class="info__logo" src="img/pic/logo-white.png" alt="Логотип компании Евклид">
+
+				<ul class="info__list">
+					<li class="info__item">
+						<a class="info__link" href="#">О нас</a>
+					</li>
+					<li class="info__item">
+						<a class="info__link" href="#">Проекты</a>
+					</li>
+					<li class="info__item">
+						<a class="info__link" href="#">Отзывы</a>
+					</li>
+					<li class="info__item">
+						<a class="info__link" href="#">Договор оферты</a>
+					</li>
+					<li class="info__item">
+						<a class="info__link" href="#">Договор подряда</a>
+					</li>
+					<li class="info__item">
+						<a class="info__link" href="#">Конфиденциальность</a>
+					</li>
+					<li class="info__item">
+						<a class="info__link" href="#">Партнёрское соглашение</a>
+					</li>
+				</ul>
+
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link-facebook" id="facebook" title="facebook-com. Ссылка откроется в новом окне" href="https://www.facebook.com" target="_blank"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link-vkontakte" id="vkontakte" title="vk-com. Ссылка откроется в новом окне" href="https://vk.com" target="_blank"></a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link-instagram" id="instagram" title="instagram-com. Ссылка откроется в новом окне" href="https://www.instagram.com" target="_blank"></a>
+					</li>
+				</ul>
+			</div>
+
+			<form class="request footer-item-center footer-item" action="https://jsonplaceholder.typicode.com/posts" method="POST" autocomplete="on">
+				<fieldset class="request__fieldset">
+					<legend class="request__legend">Оставить заявку</legend>
+
+					<ul class="request__list">
+						<li class="request__item">
+							<label class="visually-hidden" for="input-name">Фамилия, имя и отчество (Обязательное поле)</label>
+
+							<input class="request__input" id="input-name" type="text" name="name" placeholder="Фамилия, имя и отчество&ast;" required>
+						</li>
+						<li class="request__item">
+							<label class="visually-hidden" for="input-mail">E-mail (Обязательное поле)</label>
+
+							<input class="request__input" id="input-mail" type="email" name="E-mail" placeholder="E-mail&ast;" required>
+						</li>
+						<li class="request__item">
+							<label class="visually-hidden" for="input-message">Сообщение</label>
+
+							<textarea class="request__textarea" id="input-message" name="message" placeholder="Сообщение"></textarea>
+						</li>
+					</ul>
+
+					<div class="request__container">
+						<button class="request__button orange-button" type="submit">Отправить данные</button>
+
+						<div class="request__terms-container">
+							<input class="request__terms-checkbox" id="checkbox-terms" type="checkbox" name="terms" required checked>
+
+							<label class="request__terms-label" for="checkbox-terms">Согласен на обработку данных</label>
+						</div>
+					</div>
+				</fieldset>
+			</form>
+
+			<small class="footer__text footer-item-right footer-item">Высокий уровень вовлечения представителей целевой аудитории является четким доказательством простого факта: разбавленное изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким образом, консультация с широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных подходов.</small>
+		</div>
+	</footer>
+</body>
+</html>
