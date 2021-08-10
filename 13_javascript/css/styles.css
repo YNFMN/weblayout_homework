@@ -503,8 +503,12 @@ button:hover {
 }
 
 .work__article {
-	display: flex;
+	display: none;
 	justify-content: space-between;
+}
+
+.work__article-active {
+  display: flex;
 }
 
 .work__container {
