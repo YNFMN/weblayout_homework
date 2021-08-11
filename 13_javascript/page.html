@@ -51,40 +51,44 @@
 	<main class="main">
 		<div class="main__container container">
 			<section class="hero">
-        <picture class="hero__picture">
-          <source media="(max-width: 320px)" srcset="img/pic/hero1@320.jpg">
-          <source media="(max-width: 768px)" srcset="img/pic/hero1@768.jpg">
-          <source media="(max-width: 1024px)" srcset="img/pic/hero1@1024.jpg">
-          <img class="hero__image" src="img/pic/hero1.jpg" alt="Фото здания">
-        </picture>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture class="hero__picture">
+                <source media="(max-width: 320px)" srcset="img/pic/hero1@320.jpg">
+                <source media="(max-width: 768px)" srcset="img/pic/hero1@768.jpg">
+                <source media="(max-width: 1024px)" srcset="img/pic/hero1@1024.jpg">
+                <img class="hero__image" src="img/pic/hero1.jpg" alt="Фото здания">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="hero__picture">
+                <source media="(max-width: 320px)" srcset="img/pic/hero2@320.jpeg">
+                <source media="(max-width: 768px)" srcset="img/pic/hero2@768.jpeg">
+                <source media="(max-width: 1024px)" srcset="img/pic/hero2@1024.jpeg">
+                <img class="hero__image" src="img/pic/hero2.jpg" alt="Фото здания">
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture class="hero__picture">
+                <source media="(max-width: 320px)" srcset="img/pic/hero3@320.jpeg">
+                <source media="(max-width: 768px)" srcset="img/pic/hero3@768.jpeg">
+                <source media="(max-width: 1024px)" srcset="img/pic/hero3@1024.jpeg">
+                <img class="hero__image" src="img/pic/hero3.jpg" alt="Фото здания">
+              </picture>
+            </div>
+          </div>
 
-				<div class="hero__content">
-					<h2 class="hero__title">Проектные решения любой сложности</h2>
+          <div class="swiper-pagination"></div>
 
-					<p class="hero__paragraph">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов </p>
+          <div class="hero__content">
+            <h2 class="hero__title">Проектные решения любой сложности</h2>
 
-					<button class="hero__button orange-button">Заказать расчёт</button>
-				</div>
+            <p class="hero__paragraph">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов </p>
 
-				<div class="hero__slider slider">
-					<ul class="slider__list">
-						<li class="slider__item">
-							<button class="slider__button">
-								<label class="slider__label visually-hidden">Первая кнопка</label>
-							</button>
-						</li>
-						<li class="slider__item">
-							<button class="slider__button slider__button-inactive">
-								<label class="slider__label visually-hidden">Вторая кнопка</label>
-							</button>
-						</li>
-						<li class="slider__item">
-							<button class="slider__button slider__button-inactive">
-								<label class="slider__label visually-hidden">Третья кнопка</label>
-							</button>
-						</li>
-					</ul>
-				</div>
+            <button class="hero__button orange-button">Заказать расчёт</button>
+          </div>
+        </div>
 			</section>
 
 			<section class="about">
