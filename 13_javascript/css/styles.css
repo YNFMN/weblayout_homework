@@ -497,8 +497,11 @@ button:hover {
 	color: var(--color-orange-light);
 }
 
-.work__steps-active,
-.work__steps:active {
+.work__steps-active {
+	color: var(--color-orange-dark);
+}
+
+.work__steps:hover.work__steps-active {
 	color: var(--color-orange-dark);
 }
 
