@@ -171,6 +171,7 @@ button:hover {
 /* HEADER */
 
 .nav {
+  position: relative;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -178,15 +179,40 @@ button:hover {
 	box-shadow: 0px 5px 40px 0px var(--color-black-shadow)
 }
 
-.burger {
+.burger__button {
 	display: none;
+}
+.burger__list {
+  position: absolute;
+  display: block;
+  z-index: 12;
+  top: 100px;
+  left: var(--padding-container);
+  width: 150px;
+  padding: 20px;
+  background-color: var(--color-white);
+  transition: transform .3s ease-in-out;
+  transform: translateX(-200%);
+}
+
+.burger__list-active {
+  transform: none;
+}
+
+.burger__item {
+  display: block;
+}
+
+.burger__item:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .logo-link {
 	line-height: 0;
 }
 
-.nav__item {
+.nav__item,
+.burger__item {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 22px;
@@ -196,7 +222,8 @@ button:hover {
 	margin-right: 80.5px;
 }
 
-.nav__link {
+.nav__link,
+.burger__link {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 22px;
@@ -628,8 +655,8 @@ button:hover {
   border-color: var(--color-orange-light);
 }
 
-.faq__item:hover  + .faq__item,
-.faq__item:focus  + .faq__item {
+.faq__item:hover + .faq__item,
+.faq__item:focus + .faq__item {
   border-top-color: var(--color-orange-light);
 }
 
@@ -1093,7 +1120,7 @@ button:hover {
 		display: none;
 	}
 
-	.burger {
+	.burger__button {
 		display: inline-block;
 		width: 30px;
 		height: 23px;
@@ -1369,6 +1396,10 @@ button:hover {
   .nav {
     padding-top: 10px;
     padding-bottom: 11px;
+  }
+
+  .burger__list {
+    top: 69px;
   }
 
   /* HERO 768 */
