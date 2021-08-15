@@ -651,6 +651,18 @@ button:hover {
   border-top-color: var(--color-orange-light);
 }
 
+/* Класс для серых бордеров при раскрытом аккордеоне
+
+.faq__item-active:hover,
+.faq__item-active:focus {
+  border-color: var(--color-grey-light);
+}
+
+.faq__item-active:hover + .faq__item,
+.faq__item-active:focus + .faq__item {
+  border-top-color: var(--color-grey-light);
+} */
+
 .faq__item:hover .faq__span,
 .faq__item:focus .faq__span,
 .faq__span:focus {
