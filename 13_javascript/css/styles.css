@@ -182,14 +182,11 @@ button:hover {
 .burger__button {
 	display: none;
 }
+
 .burger__list {
   position: absolute;
   display: block;
   z-index: 12;
-  top: 100px;
-  left: var(--padding-container);
-  width: 150px;
-  padding: 20px;
   background-color: var(--color-white);
   transition: transform .3s ease-in-out;
   transform: translateX(-200%);
@@ -203,16 +200,11 @@ button:hover {
   display: block;
 }
 
-.burger__item:not(:last-child) {
-  margin-bottom: 40px;
-}
-
 .logo-link {
 	line-height: 0;
 }
 
-.nav__item,
-.burger__item {
+.nav__item {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: 22px;
@@ -222,8 +214,7 @@ button:hover {
 	margin-right: 80.5px;
 }
 
-.nav__link,
-.burger__link {
+.nav__link {
 	font-weight: 600;
 	font-size: 18px;
 	line-height: 22px;
@@ -1122,6 +1113,7 @@ button:hover {
 
 	.burger__button {
 		display: inline-block;
+    z-index: 13;
 		width: 30px;
 		height: 23px;
     background-image: url('../img/icon/burger.svg');
@@ -1129,8 +1121,32 @@ button:hover {
     background-size: cover;
   }
 
+  .burger__button:active {
+    background-image: url('../img/icon/burger-click.svg');
+  }
+
   .burger__button-active {
     background-image: url('../img/icon/burger-active.svg');
+    background-size: contain;
+  }
+
+  .burger__list {
+    top: 0;
+    left: 0;
+    padding-top: 162px;
+    padding-left: var(--padding-container);
+    width: 420px;
+    height: 768px;
+  }
+
+  .burger__item:not(:last-child) {
+    margin-bottom: 60px;
+  }
+
+  .burger__link {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
   }
 
   .logo-link__image {
@@ -1404,7 +1420,8 @@ button:hover {
   }
 
   .burger__list {
-    top: 69px;
+    padding-top: 144px;
+    height: 731px;
   }
 
   /* HERO 768 */
@@ -1558,6 +1575,10 @@ button:hover {
 
   :root {
     --padding-container: 15px;
+  }
+
+  .burger__list {
+    width: 60%;
   }
 
   /* HERO <768 */
@@ -1803,6 +1824,21 @@ button:hover {
 
   .nav {
     padding: 17px var(--padding-container);
+  }
+
+  .burger__list {
+    padding-top: 78px;
+    width: 100%;
+    height: 377px;
+  }
+
+  .burger__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  .burger__link {
+    font-size: 16px;
+    line-height: 20px;
   }
 
   .logo-link__image {
