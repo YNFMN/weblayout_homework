@@ -552,30 +552,30 @@ button:hover {
   max-width: 354px;
 }
 
-.work__button {
+.work__link {
 	font-size: var(--font-size-common);
 	line-height: 20px;
 }
 
-.work__button-details {
+.work__link-details {
 	padding: 20px 38px;
 	font-weight: 700;
 }
 
-.work__button-details:hover,
-.work__button-details:focus {
+.work__link-details:hover,
+.work__link-details:focus {
 	background-color: var(--color-orange-rare);
 }
 
-.work__button-details:focus {
+.work__link-details:focus {
 	outline: none;
 }
 
-.work__button-details:active {
+.work__link-details:active {
 	background-color: var(--color-orange-dark);
 }
 
-.work__button-agreement {
+.work__link-agreement {
 	padding: 19px 37px;
 	padding-top: 19px;
 	padding-bottom: 19px;
@@ -583,18 +583,18 @@ button:hover {
 	border: 1px solid var(--color-grey-dark);
 }
 
-.work__button-agreement:hover,
-.work__button-agreement:focus {
+.work__link-agreement:hover,
+.work__link-agreement:focus {
 	color: var(--color-white);
 	background-color: var(--color-grey-pseudo-light);
 	border: 1px solid var(--color-grey-pseudo-light);
 }
 
-.work__button-agreement:focus {
+.work__link-agreement:focus {
 	outline: none;
 }
 
-.work__button-agreement:active {
+.work__link-agreement:active {
 	color: var(--color-white);
 	background-color: var(--color-black);
 	border: 1px solid var(--color-black);
@@ -1255,17 +1255,17 @@ button:hover {
     max-width: 437px;
   }
 
-  .work__button {
+  .work__link {
     font-size: var(--font-size-common);
     line-height: 20px;
   }
 
-  .work__button-details {
+  .work__link-details {
     padding: 20px 38px;
     font-weight: 700;
   }
 
-  .work__button-agreement {
+  .work__link-agreement {
     padding: 19px 37px;
     padding-top: 19px;
     padding-bottom: 19px;
@@ -1712,16 +1712,16 @@ button:hover {
     max-width: 300px;
   }
 
-  .work__button {
+  .work__link {
     font-size: 12px;
     line-height: 15px;
   }
 
-  .work__button-details {
+  .work__link-details {
     padding: 12px 44px;
   }
 
-  .work__button-agreement {
+  .work__link-agreement {
     padding: 12px 31.5px;
   }
 
