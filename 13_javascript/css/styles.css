@@ -185,7 +185,7 @@ button:hover {
 
 .burger__list {
   position: absolute;
-  display: block;
+  display: none;
   z-index: 12;
   background-color: var(--color-white);
   transition: transform .3s ease-in-out;
@@ -289,6 +289,11 @@ button:hover {
 .hero__title,
 .hero__paragraph {
 	color: var(--color-white);
+}
+
+.hero__paragraph {
+ max-height: 140px;
+ overflow: hidden;
 }
 
 .hero__title {
