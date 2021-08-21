@@ -291,11 +291,6 @@ button:hover {
 	color: var(--color-white);
 }
 
-.hero__paragraph {
- max-height: 140px;
- overflow: hidden;
-}
-
 .hero__title {
 	max-width: 837px;
 	font-size: 70px;
