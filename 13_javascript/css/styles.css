@@ -269,7 +269,6 @@ button:hover {
 	margin-bottom: 101px;
 	margin-left: auto;
   padding: 100px 80px;
-  min-height: 620px;
 }
 
 .hero .swiper-container {
@@ -660,18 +659,6 @@ button:hover {
   border-top-color: var(--color-orange-light);
 }
 
-/* Класс для серых бордеров при раскрытом аккордеоне
-
-.faq__item-active:hover,
-.faq__item-active:focus {
-  border-color: var(--color-grey-light);
-}
-
-.faq__item-active:hover + .faq__item,
-.faq__item-active:focus + .faq__item {
-  border-top-color: var(--color-grey-light);
-} */
-
 .faq__item:hover .faq__span,
 .faq__item:focus .faq__span,
 .faq__span:focus {
@@ -1043,16 +1030,6 @@ button:hover {
     margin-right: 20px;
   }
 
-  /* HERO 1650 */
-
-  .hero {
-    width: 100%;
-  }
-
-  .hero__image {
-    height: 668px;
-  }
-
   /* ABOUT 1650 */
 
   .about__paragraph {
@@ -1184,12 +1161,11 @@ button:hover {
 
   .hero {
     margin-bottom: 80px;
+    padding: 160px 77px;
   }
 
-  .hero__content {
-    position: absolute;
-    top: 160px;
-    left: 77px;
+  .hero__image {
+    height: 668px;
   }
 
   .hero__title {
@@ -1443,24 +1419,22 @@ button:hover {
 
   .burger__list {
     padding-top: 144px;
-    height: 731px;
+    height: 738px;
   }
 
   /* HERO 768 */
 
+  .hero {
+    padding: 160px 40px;
+  }
+
   .hero__image {
-    height: 662px;
+    width: 100%;
   }
 
   .hero__title {
     font-size: 50px;
     line-height: 61px;
-  }
-
-  .hero__content {
-    position: absolute;
-    top: 160px;
-    left: 40px;
   }
 
   .hero__paragraph {
@@ -1613,9 +1587,6 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
   }
 
   .hero__title {
@@ -1872,16 +1843,7 @@ button:hover {
 
   .hero {
     margin-bottom: 60px;
-  }
-
-  .hero__image {
-    height: 308px;
-  }
-
-  .hero__content {
-    top: 60px;
-    left: 22px;
-    transform: unset;
+    padding: 60px 21px
   }
 
   .hero__title {
@@ -1896,7 +1858,7 @@ button:hover {
     line-height: 15px;
   }
 
-  .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  .swiper-pagination{
     bottom: 15px;
   }
 
