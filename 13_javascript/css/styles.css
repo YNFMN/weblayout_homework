@@ -186,7 +186,7 @@ button:hover {
 .burger__list {
   position: absolute;
   display: none;
-  z-index: 12;
+  z-index: 8;
   background-color: var(--color-white);
   transition: transform .3s ease-in-out;
   transform: translateX(-200%);
@@ -268,22 +268,31 @@ button:hover {
 	margin-right: auto;
 	margin-bottom: 101px;
 	margin-left: auto;
+  padding: 100px 80px;
+  min-height: 620px;
 }
 
-.swiper-container {
-  width: 100%;
+.hero .swiper-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.hero__picture {
   height: 100%;
 }
 
 .hero__image {
+  height: 100%;
 	display: block;
+  object-fit: cover;
 }
 
 .hero__content {
-	position: absolute;
-	top: 103px;
-	left: 80px;
-  z-index: 11;
+  position: relative;
+  z-index: 5;
 }
 
 .hero__title,
@@ -331,16 +340,16 @@ button:hover {
 }
 
 .swiper-pagination {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  z-index: 6;
+  transform: translateX(-50%);
   line-height: 0;
 }
 
-.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 30px;
-}
-
-
-.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
-  margin: 0 10px;
+.swiper-pagination-bullet:not(:last-child) {
+  margin-right: 20px;
 }
 
 .swiper-pagination-bullet {
@@ -1125,7 +1134,7 @@ button:hover {
 
 	.burger__button {
 		display: inline-block;
-    z-index: 13;
+    z-index: 9;
 		width: 30px;
 		height: 23px;
     background-image: url('../img/icon/burger.svg');
@@ -1143,6 +1152,7 @@ button:hover {
   }
 
   .burger__list {
+    display: block;
     top: 0;
     left: 0;
     padding-top: 162px;
