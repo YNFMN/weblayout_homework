@@ -78,7 +78,7 @@
 	--color-orange-dark: #e1670e;
 	--color-orange-rare: #f7b045;
   --padding-container: 75px;
-	--padding-focus: 5px;
+	--padding-focus: 7px;
   --font-size-common: 16px;
   --line-height-common: 32px;
 }
@@ -223,10 +223,6 @@ button:hover {
 .nav__link:hover {
 	border-bottom: 2px solid var(--color-orange-light);
 	outline: none;
-}
-
-.nav__link:focus{
-	outline-offset: 0;
 }
 
 .nav__link:active {
@@ -443,6 +439,7 @@ button:hover {
 
 .main-card__button:hover,
 .main-card__button:focus {
+  color: var(--color-white);
 	background-color: var(--color-orange-light);
 }
 

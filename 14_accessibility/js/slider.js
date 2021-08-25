@@ -5,4 +5,7 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
 		clickable: true,
   },
+  a11y: {
+    paginationBulletMessage: 'Перейти к слайду {{index}}',
+  },
 });
