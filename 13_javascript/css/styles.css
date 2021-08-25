@@ -271,7 +271,7 @@ button:hover {
   padding: 100px 80px;
 }
 
-.hero .swiper-container {
+.hero .swiper {
   position: absolute;
   left: 0;
   right: 0;
@@ -353,10 +353,10 @@ button:hover {
 
 .swiper-pagination {
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   bottom: 30px;
   z-index: 6;
-  transform: translateX(-50%);
   line-height: 0;
 }
 
