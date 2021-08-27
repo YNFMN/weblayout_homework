@@ -654,23 +654,35 @@ button:hover {
   border-bottom: none;
 }
 
-.faq__item:focus {
-	outline: none;
+.faq__subtitle {
+  position: relative;
+  display: flex;
+  padding: 39px 0 39px;
+  width: 100%;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 32px;
 }
 
+.faq__item:focus,
+.faq__subtitle:focus {
+	outline: unset;
+}
+
+
 .faq__item:hover,
-.faq__item:focus {
+.faq__item:focus-within {
   color: var(--color-orange-light);
   border-color: var(--color-orange-light);
 }
 
 .faq__item:hover + .faq__item,
-.faq__item:focus + .faq__item {
+.faq__item:focus-within + .faq__item {
   border-top-color: var(--color-orange-light);
 }
 
 .faq__item:hover .faq__span,
-.faq__item:focus .faq__span,
+.faq__item:focus-within .faq__span,
 .faq__span:focus {
 	background-image: url('../img/icon/plus-orange.svg');
   transition-duration: .7s;
@@ -683,20 +695,6 @@ button:hover {
 
 .faq__item:active + .faq__item {
   border-top-color: var(--color-grey-light);
-}
-
-.faq__subtitle {
-  position: relative;
-  display: flex;
-  padding: 39px 0 39px;
-  width: 100%;
-	font-weight: 700;
-	font-size: 24px;
-	line-height: 32px;
-}
-
-.faq__subtitle:focus {
-  outline: unset;
 }
 
 .faq__subheading {
@@ -733,6 +731,11 @@ button:hover {
 
 .faq__item:hover .ui-state-active,
 .faq__item:hover .ui-accordion-content-active {
+  color: var(--color-grey-dark);
+}
+
+.faq__item:focus-within .ui-state-active,
+.faq__item:focus-within .ui-accordion-content-active {
   color: var(--color-grey-dark);
 }
 
