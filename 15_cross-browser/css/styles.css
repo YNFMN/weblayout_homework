@@ -188,12 +188,16 @@ button:hover {
   display: none;
   z-index: 8;
   background-color: var(--color-white);
+  transition: -webkit-transform .3s ease-in-out;
   transition: transform .3s ease-in-out;
-  transform: translateX(-200%);
+  transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
 }
 
 .burger__list-active {
-  transform: none;
+  -webkit-transform: none;
+          transform: none;
 }
 
 .burger__item {
@@ -431,7 +435,8 @@ button:hover {
 }
 
 .main-card__button {
-	align-self: center;
+	-ms-grid-row-align: center;
+	    align-self: center;
 	padding: 17px 35px;
 	line-height: 20px;
 	border: 3px solid var(--color-orange-light);
@@ -711,17 +716,20 @@ button:hover {
 	height: 50px;
 	background-image: url('../img/icon/plus.svg');
 	background-repeat: no-repeat;
-  transform: translateY(-25px);
+  -webkit-transform: translateY(-25px);
+          transform: translateY(-25px);
 }
 
 .faq__item:active .faq__span {
 	background-image: url('../img/icon/plus.svg');
-  transform: translateY(-25px) rotate(45deg);
+  -webkit-transform: translateY(-25px) rotate(45deg);
+          transform: translateY(-25px) rotate(45deg);
   transition-duration: .7s;
 }
 
 .faq__subtitle.ui-state-active .faq__span {
-  transform: translateY(-25px) rotate(45deg);
+  -webkit-transform: translateY(-25px) rotate(45deg);
+          transform: translateY(-25px) rotate(45deg);
   transition-duration: .7s;
 }
 
@@ -908,6 +916,22 @@ button:hover {
 	border: none;
 }
 
+.request__input::-webkit-input-placeholder, .request__textarea::-webkit-input-placeholder {
+	color: var(--color-grey-light);
+}
+
+.request__input::-moz-placeholder, .request__textarea::-moz-placeholder {
+	color: var(--color-grey-light);
+}
+
+.request__input:-ms-input-placeholder, .request__textarea:-ms-input-placeholder {
+	color: var(--color-grey-light);
+}
+
+.request__input::-ms-input-placeholder, .request__textarea::-ms-input-placeholder {
+	color: var(--color-grey-light);
+}
+
 .request__input::placeholder,
 .request__textarea::placeholder {
 	color: var(--color-grey-light);
@@ -936,7 +960,8 @@ button:hover {
 
 .request__terms-container {
 	display: inline-block;
-  align-self: center;
+  -ms-grid-row-align: center;
+      align-self: center;
 	line-height: 0;
 }
 
@@ -1693,7 +1718,8 @@ button:hover {
   /* WORK <768 */
 
   .work__picture {
-    align-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
   }
 
   .work__image {
@@ -1788,7 +1814,8 @@ button:hover {
   }
 
   .request__button {
-    align-self: center;
+    -ms-grid-row-align: center;
+        align-self: center;
     padding: 12px 24px;
     margin-bottom: 11px;
   }
@@ -1997,15 +2024,18 @@ button:hover {
     width: 30px;
     height: 30px;
     background-size: cover;
-    transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
 
   .faq__item:active .faq__span {
-    transform: translateY(-15px) rotate(45deg);
+    -webkit-transform: translateY(-15px) rotate(45deg);
+            transform: translateY(-15px) rotate(45deg);
   }
 
   .faq__subtitle.ui-state-active .faq__span {
-    transform: translateY(-15px) rotate(45deg);
+    -webkit-transform: translateY(-15px) rotate(45deg);
+            transform: translateY(-15px) rotate(45deg);
   }
 
   .faq__container {
@@ -2038,4 +2068,3 @@ button:hover {
     line-height: 15px;
   }
 }
-
