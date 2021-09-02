@@ -6,10 +6,63 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<title>База знаний</title>
 
-	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <div class="first">
+    <fieldset class="fieldset">
+      <legend class="legend">Категории:</legend>
 
+      <ul class="list">
+        <li class="item">
+          <label for="dino" class="label">
+            <input type="checkbox" name="category" id="dino" class="checkbox visually-hidden" checked>Динозавры
+
+            <div class="custom-checkbox"></div>
+          </label>
+        </li>
+        <li class="item">
+          <label for="bear" class="label">
+            <input type="checkbox" name="category" id="bear" class="checkbox visually-hidden">Медведи
+
+            <div class="custom-checkbox"></div>
+          </label>
+        </li>
+        <li class="item">
+          <label for="roe" class="label">
+            <input type="checkbox" name="category" id="roe" class="checkbox visually-hidden">Косули
+
+            <div class="custom-checkbox"></div>
+          </label>
+        </li>
+        <li class="item">
+          <label for="fox" class="label">
+            <input type="checkbox" name="category" id="fox" class="checkbox visually-hidden">Лисы
+
+            <div class="custom-checkbox"></div>
+          </label>
+        </li>
+        <li class="item">
+          <label for="wolf" class="label">
+            <input type="checkbox" name="category" id="wolf" class="checkbox visually-hidden">Волки
+
+            <div class="custom-checkbox"></div>
+          </label>
+        </li>
+        <li class="item">
+          <label for="deer" class="label">
+            <input type="checkbox" name="category" id="deer" class="checkbox visually-hidden">Олени и лоси
+
+            <div class="custom-checkbox"></div>
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+  </div>
 </body>
 </html>
