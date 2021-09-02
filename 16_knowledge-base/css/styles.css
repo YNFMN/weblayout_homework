@@ -44,6 +44,10 @@ button {
   margin: -1px;
 }
 
+section:not(:last-child) {
+  margin-bottom: 50px;
+}
+
 
 /* CHECKBOX */
 
@@ -116,9 +120,31 @@ button {
 }
 
 .checkbox:focus + .custom-checkbox {
-  outline: 1px solid #CCB26E;
+  outline: 1px solid rgba(204,178,110,.6);
   outline-offset: 3px;
 }
 
 
 /* SELECT */
+
+.choices__inner {
+	border-radius: 10px;
+}
+
+.is-open .choices__inner {
+	border-radius: 10px;
+}
+
+.choices__list--dropdown {
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+
+
+
+
+
+#choices--material-item-choice-5 {
+	display: none;
+}

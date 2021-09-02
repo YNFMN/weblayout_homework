@@ -10,11 +10,12 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto&display=swap" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css"/>
   <link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <div class="first">
+  <section class="first">
     <fieldset class="fieldset">
       <legend class="legend">Категории:</legend>
 
@@ -63,6 +64,22 @@
         </li>
       </ul>
     </fieldset>
-  </div>
+  </section>
+
+  <section class="second">
+		<select class="custom-select" name="material" id="material" aria-label="Выбор материала">
+			<option value="">Материал</option>
+			<option value="wood">Древесина</option>
+			<option value="metal">Металл</option>
+			<option value="stone">Камень</option>
+			<option value="plastic">Пластик</option>
+			<option value="composite">Композитный</option>
+			<option value="gypsum">Гипс</option>
+		</select>
+	</section>
+
+	<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+
+	<script src="js/select.js"></script>
 </body>
 </html>
