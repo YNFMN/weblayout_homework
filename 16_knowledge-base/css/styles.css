@@ -231,21 +231,13 @@ section:not(:last-child) {
   background-color: #fff;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #choices--material-item-choice-5 {
 	display: none;
+}
+
+/* MAP */
+
+.map {
+  width: 460px;
+  height: 460px;
 }
