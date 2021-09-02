@@ -101,7 +101,7 @@ section:not(:last-child) {
 }
 
 .checkbox + .custom-checkbox:before {
-  content: url('../img/tick.svg');
+  content: url('../img/checkbox.svg');
   position: absolute;
   top: -5px;
   right: 0;
@@ -127,18 +127,119 @@ section:not(:last-child) {
 
 /* SELECT */
 
+.second {
+  min-height: 250px;
+}
+
+.choices {
+  width: 176px;
+}
+
 .choices__inner {
+  position: relative;
+  z-index: 2;
+  padding: 9px 15px 11px 15px;
 	border-radius: 10px;
+  border: unset;
+  min-height: auto;
+  background-color: #fff;
+}
+
+.choices__inner:focus {
+  outline: 2px solid red;
+}
+
+.choices.is-open .choices__inner {
+  padding: 8px 14px 10px 14px;
+  border: 1px solid #CCB26E;
+}
+
+.choices[data-type*=select-one] .choices__inner {
+  padding-bottom: 11px;
+}
+
+.choices__list--single {
+  padding: 0;
 }
 
 .is-open .choices__inner {
-	border-radius: 10px;
+  border-bottom: none;
+  border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+  min-height: auto;
 }
 
 .choices__list--dropdown {
+  margin-top: -10px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+  border: unset;
 }
+
+.choices__list--dropdown .choices__item--selectable {
+  padding-right: 0;
+}
+
+.choices__placeholder {
+  line-height: 19px;
+  opacity: 1;
+}
+
+.choices[data-type*=select-one]:after {
+  all: unset;
+}
+
+.choices[data-type*=select-one]:after {
+  position: absolute;
+  z-index: 3;
+  content: url('../img/select.svg');
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  transition-duration: .2s;
+  pointer-events: none;
+}
+
+.choices[data-type*=select-one].is-open:after {
+  content: url('../img/select-active.svg');
+  margin-top: 0;
+  transform: translateY(-50%) rotate(360deg);
+  transition-duration: .2s;
+}
+
+.choices__list.choices__list--dropdown.is-active {
+  border: 1px solid #CCB26E;
+  border-top-width: 0;
+}
+
+.choices__list--dropdown .choices__item {
+  padding: 10px 10px 10px 14px;
+  line-height: 19px;
+}
+
+.choices__list--dropdown .choices__item:nth-child(2) {
+  padding: 30px 10px 10px 14px;
+}
+
+.choices__list--dropdown .choices__item:last-child {
+  padding: 10px 10px 20px 14px;
+}
+
+.choices__list--dropdown .choices__item.is-selected {
+  background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
