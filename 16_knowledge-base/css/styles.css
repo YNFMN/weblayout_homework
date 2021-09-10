@@ -26,6 +26,10 @@ button, fieldset, textarea {
 	all: unset;
 }
 
+input {
+  border: none;
+}
+
 button {
 	display: inline-block;
 	text-align: center;
@@ -294,6 +298,65 @@ section:not(:last-child) {
   bottom: 0;
   opacity: 1;
 }
+
+/* VALIDATION */
+
+.registration {
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+  padding: 38px 30px;
+  width: 440px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+.registration__item:not(:last-child) {
+  margin-bottom: 31px;
+}
+
+.registration__item {
+  position: relative;
+}
+
+.registration__input {
+  padding-left: 20px;
+  width: 380px;
+  height: 60px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.registration__input::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #999;
+}
+
+.registration__button {
+  display: block;
+  margin-top: 31px;
+  margin-left: 7px;
+  padding: 18.5px 53px;
+  font-size: 20px;
+  line-height: 23px;
+  color: #fff;
+  background-color: #ff5c00;
+  border-radius: 10px;
+}
+
+.registration__button:hover {
+  background-color: #ff4800;
+  transition: .3s ease-in-out;
+}
+
+.js-validate-error-label {
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+
 
 
 

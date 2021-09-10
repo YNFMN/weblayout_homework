@@ -95,7 +95,18 @@
         <legend class="registration__legend visually-hidden">Форма регистрации</legend>
 
         <ul class="registration__list">
+          <li class="registration__item">
+            <input data-validate-field="name" name="name" type="text" class="registration__input" placeholder="Имя*">
+          </li>
+          <li class="registration__item">
+            <input data-validate-field="phone" name="tel" type="tel" class="registration__input" placeholder="Телефон*">
+          </li>
+          <li class="registration__item">
+            <input data-validate-field="email" name="email" type="email" class="registration__input" placeholder="E-mail*">
+          </li>
         </ul>
+
+        <button class="registration__button" type="submit">Заказать</button>
       </fieldset>
     </form>
   </section>
@@ -107,5 +118,11 @@
   <script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU"></script>
 
   <script src="js/map.js"></script>
+
+  <script src="js/just-validate.min.js"></script>
+
+  <script src="js/inputmask.min.js"></script>
+
+  <script src="js/form.js"></script>
 </body>
 </html>
