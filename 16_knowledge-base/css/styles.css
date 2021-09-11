@@ -356,6 +356,77 @@ section:not(:last-child) {
   line-height: 14px;
 }
 
+/* TOOLTIP */
+
+.text-block {
+  padding: 20px 78px 20px 29px;
+  width: 375px;
+  height: 160px;
+  line-height: 24px;
+  background-color: #fff;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin-left: 2px;
+  transform: translateY(2px)
+}
+
+.marker {
+  width: 16px;
+  height: 16px;
+  background-image: url('../img/tooltip.svg');
+  transition: .15s ease-in-out;
+}
+
+.marker:hover,
+.marker:focus {
+  background-image: url('../img/tooltip-active.svg');
+}
+
+.message {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-bottom: 11px;
+  padding: 7px 15px 8px 15px;
+  max-width: 163px;
+  width: max-content;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+  background-color: #666;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: .25s ease-in-out;
+}
+
+.message::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6.3px 3.15px 0 3.15px;
+  border-color: #666 transparent transparent transparent;
+  transform: translateX(-50%);
+}
+
+.marker:hover + .message,
+.marker:focus + .message {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+
 
 
 
